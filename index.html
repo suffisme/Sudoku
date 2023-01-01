@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adobe</title>
+</head>
+<body>
+    <div id="body">
+      
+    <h2 class="heading">SUDOKU <span id="filled">Filled: (<span id="count">0</span>)</span></h2>  
+    <div class="sudoku">
+        <div class="row">
+            <div class="cell" id="c11" onClick="makeCurrent(11);"></div>
+            <div class="cell" id="c12" onClick="makeCurrent(12);"></div>
+            <div class="cell" id="c13" onClick="makeCurrent(13);"></div>
+            <div class="cell" id="c14" onClick="makeCurrent(14);"></div>
+            <div class="cell" id="c15" onClick="makeCurrent(15);"></div>
+            <div class="cell" id="c16" onClick="makeCurrent(16);"></div>
+            <div class="cell" id="c17" onClick="makeCurrent(17);"></div>
+            <div class="cell" id="c18" onClick="makeCurrent(18);"></div>
+            <div class="cell" id="c19" onClick="makeCurrent(19);"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="c21" onClick="makeCurrent(21);"></div>
+            <div class="cell" id="c22" onClick="makeCurrent(22);"></div>
+            <div class="cell" id="c23" onClick="makeCurrent(23);"></div>
+            <div class="cell" id="c24" onClick="makeCurrent(24);"></div>
+            <div class="cell" id="c25" onClick="makeCurrent(25);"></div>
+            <div class="cell" id="c26" onClick="makeCurrent(26);"></div>
+            <div class="cell" id="c27" onClick="makeCurrent(27);"></div>
+            <div class="cell" id="c28" onClick="makeCurrent(28);"></div>
+            <div class="cell" id="c29" onClick="makeCurrent(29);"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="c31" onClick="makeCurrent(31);"></div>
+            <div class="cell" id="c32" onClick="makeCurrent(32);"></div>
+            <div class="cell" id="c33" onClick="makeCurrent(33);"></div>
+            <div class="cell" id="c34" onClick="makeCurrent(34);"></div>
+            <div class="cell" id="c35" onClick="makeCurrent(35);"></div>
+            <div class="cell" id="c36" onClick="makeCurrent(36);"></div>
+            <div class="cell" id="c37" onClick="makeCurrent(37);"></div>
+            <div class="cell" id="c38" onClick="makeCurrent(38);"></div>
+            <div class="cell" id="c39" onClick="makeCurrent(39);"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="c41" onClick="makeCurrent(41);"></div>
+            <div class="cell" id="c42" onClick="makeCurrent(42);"></div>
+            <div class="cell" id="c43" onClick="makeCurrent(43);"></div>
+            <div class="cell" id="c44" onClick="makeCurrent(44);"></div>
+            <div class="cell" id="c45" onClick="makeCurrent(45);"></div>
+            <div class="cell" id="c46" onClick="makeCurrent(46);"></div>
+            <div class="cell" id="c47" onClick="makeCurrent(47);"></div>
+            <div class="cell" id="c48" onClick="makeCurrent(48);"></div>
+            <div class="cell" id="c49" onClick="makeCurrent(49);"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="c51" onClick="makeCurrent(51);"></div>
+            <div class="cell" id="c52" onClick="makeCurrent(52);"></div>
+            <div class="cell" id="c53" onClick="makeCurrent(53);"></div>
+            <div class="cell" id="c54" onClick="makeCurrent(54);"></div>
+            <div class="cell" id="c55" onClick="makeCurrent(55);"></div>
+            <div class="cell" id="c56" onClick="makeCurrent(56);"></div>
+            <div class="cell" id="c57" onClick="makeCurrent(57);"></div>
+            <div class="cell" id="c58" onClick="makeCurrent(58);"></div>
+            <div class="cell" id="c59" onClick="makeCurrent(59);"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="c61" onClick="makeCurrent(61);"></div>
+            <div class="cell" id="c62" onClick="makeCurrent(62);"></div>
+            <div class="cell" id="c63" onClick="makeCurrent(63);"></div>
+            <div class="cell" id="c64" onClick="makeCurrent(64);"></div>
+            <div class="cell" id="c65" onClick="makeCurrent(65);"></div>
+            <div class="cell" id="c66" onClick="makeCurrent(66);"></div>
+            <div class="cell" id="c67" onClick="makeCurrent(67);"></div>
+            <div class="cell" id="c68" onClick="makeCurrent(68);"></div>
+            <div class="cell" id="c69" onClick="makeCurrent(69);"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="c71" onClick="makeCurrent(71);"></div>
+            <div class="cell" id="c72" onClick="makeCurrent(72);"></div>
+            <div class="cell" id="c73" onClick="makeCurrent(73);"></div>
+            <div class="cell" id="c74" onClick="makeCurrent(74);"></div>
+            <div class="cell" id="c75" onClick="makeCurrent(75);"></div>
+            <div class="cell" id="c76" onClick="makeCurrent(76);"></div>
+            <div class="cell" id="c77" onClick="makeCurrent(77);"></div>
+            <div class="cell" id="c78" onClick="makeCurrent(78);"></div>
+            <div class="cell" id="c79" onClick="makeCurrent(79);"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="c81" onClick="makeCurrent(81);"></div>
+            <div class="cell" id="c82" onClick="makeCurrent(82);"></div>
+            <div class="cell" id="c83" onClick="makeCurrent(83);"></div>
+            <div class="cell" id="c84" onClick="makeCurrent(84);"></div>
+            <div class="cell" id="c85" onClick="makeCurrent(85);"></div>
+            <div class="cell" id="c86" onClick="makeCurrent(86);"></div>
+            <div class="cell" id="c87" onClick="makeCurrent(87);"></div>
+            <div class="cell" id="c88" onClick="makeCurrent(88);"></div>
+            <div class="cell" id="c89" onClick="makeCurrent(89);"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="c91" onClick="makeCurrent(91);"></div>
+            <div class="cell" id="c92" onClick="makeCurrent(92);"></div>
+            <div class="cell" id="c93" onClick="makeCurrent(93);"></div>
+            <div class="cell" id="c94" onClick="makeCurrent(94);"></div>
+            <div class="cell" id="c95" onClick="makeCurrent(95);"></div>
+            <div class="cell" id="c96" onClick="makeCurrent(96);"></div>
+            <div class="cell" id="c97" onClick="makeCurrent(97);"></div>
+            <div class="cell" id="c98" onClick="makeCurrent(98);"></div>
+            <div class="cell" id="c99" onClick="makeCurrent(99);"></div>
+        </div>
+    </div>
+    <h4 id="error"></h4>
+    <h3 id="success"></h3>
+    <button onClick="restartGame();">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
