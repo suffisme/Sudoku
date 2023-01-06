@@ -48,3 +48,27 @@ body{
 #success{
     color: #02f42f;
 }
+
+.my-4{
+    margin: 2% 0;
+}
+
+#difficulty-form{
+    display: flex;
+    justify-content: space-between;
+}
+#sudoku-bg{
+    top: 15.8%;
+    border: 5px solid;
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+    height: 650px;
+    position: absolute;
+    background-color: rgba(51,51,51,0.3);
+    z-index: -1;
+}
+
+#pause-resume, #restart{
+    display: none
+}

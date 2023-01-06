@@ -10,8 +10,25 @@
 <body>
     <div id="body">
       
-    <h2 class="heading">SUDOKU <span id="filled">Filled: (<span id="count">0</span>)</span></h2>  
-    <div class="sudoku">
+    <h2 class="heading">SUDOKU <span id="diff"></span> <span id="filled">Filled: (<span id="count">0</span>)</span></h2> 
+    <div class="my-4">
+        <form id="difficulty-form">
+            <b>Choose Difficulty:</b>
+            <div>
+                <input type="radio" name="difficulty" id="dif-easy" value="0" checked required>Easy
+            </div>
+            <div>
+                <input type="radio" name="difficulty" id="dif-medium" value="1" required>Medium
+            </div>
+            <div>
+                <input type="radio" name="difficulty" id="dif-hard" value="2" required>Hard
+            </div>
+
+            <input type="submit" value="Submit" id="submit-btn">
+        </form>
+    </div> 
+    <div id="sudoku-bg"></div>
+    <div class="sudoku" id="board">
         <div class="row">
             <div class="cell" id="c11" onClick="makeCurrent(11);"></div>
             <div class="cell" id="c12" onClick="makeCurrent(12);"></div>
@@ -112,9 +129,10 @@
             <div class="cell" id="c99" onClick="makeCurrent(99);"></div>
         </div>
     </div>
-    <h4 id="error"></h4>
-    <h3 id="success"></h3>
-    <button onClick="restartGame();">Restart</button>
+    <p id="error"></p>
+    <p id="success"></p>
+    <button onClick="pauseGame();" id="pause-resume">Pause</button>
+    <button onClick="restartGame();" id="restart">Restart</button>
     </div>
     <script src="script.js"></script>
 </body>
